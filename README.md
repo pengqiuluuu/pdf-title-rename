@@ -1,2 +1,3 @@
 # pdf-title-rename
-Rename all pdf files with metadata to the titles. 
+Rename all PDF files with metadata to their titles. 
+
