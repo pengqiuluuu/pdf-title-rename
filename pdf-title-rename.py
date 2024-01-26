@@ -20,10 +20,6 @@ def rename_pdfs_in_directory(directory_path):
             pdf_path = os.path.join(directory_path, filename)
             title = get_pdf_title(pdf_path)
 
-            if title:
-                # Replace invalid characters in the title with underscores
-                # title = re.sub(r'[\/:*?"<>|]', '_', title)
-
                 new_filename = f"{title}.pdf"
                 new_filepath = os.path.join(directory_path, new_filename)
 
@@ -35,5 +31,4 @@ def rename_pdfs_in_directory(directory_path):
 
 
 if __name__ == "__main__":
-    # directory_path = input("Enter the path to the directory containing PDF files: ")
-    rename_pdfs_in_directory('.\paper')
+    rename_pdfs_in_directory('.\open\to\files')
